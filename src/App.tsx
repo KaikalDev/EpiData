@@ -1,3 +1,4 @@
+import CsvTable from './Graficos/tablel'
 import Page from './Pages'
 import GlobalStyles from './styles'
 

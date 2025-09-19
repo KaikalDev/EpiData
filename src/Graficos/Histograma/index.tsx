@@ -1,51 +1,105 @@
-import React from 'react'
-import { Chart } from 'react-google-charts'
+import { useState } from 'react'
+import Chart from 'react-google-charts'
+import { Ano, FaixaEtaria, Meses, Municipio } from '../../Data/Data'
 
-export const data = [
-  ['Dinosaur', 'Length'],
-  ['Acrocanthosaurus (top-spined lizard)', 12.2],
-  ['Albertosaurus (Alberta lizard)', 9.1],
-  ['Allosaurus (other lizard)', 12.2],
-  ['Apatosaurus (deceptive lizard)', 22.9],
-  ['Archaeopteryx (ancient wing)', 0.9],
-  ['Argentinosaurus (Argentina lizard)', 36.6],
-  ['Baryonyx (heavy claws)', 9.1],
-  ['Brachiosaurus (arm lizard)', 30.5],
-  ['Ceratosaurus (horned lizard)', 6.1],
-  ['Coelophysis (hollow form)', 2.7],
-  ['Compsognathus (elegant jaw)', 0.9],
-  ['Deinonychus (terrible claw)', 2.7],
-  ['Diplodocus (double beam)', 27.1],
-  ['Dromicelomimus (emu mimic)', 3.4],
-  ['Gallimimus (fowl mimic)', 5.5],
-  ['Mamenchisaurus (Mamenchi lizard)', 21.0],
-  ['Megalosaurus (big lizard)', 7.9],
-  ['Microvenator (small hunter)', 1.2],
-  ['Ornithomimus (bird mimic)', 4.6],
-  ['Oviraptor (egg robber)', 1.5],
-  ['Plateosaurus (flat lizard)', 7.9],
-  ['Sauronithoides (narrow-clawed lizard)', 2.0],
-  ['Seismosaurus (tremor lizard)', 45.7],
-  ['Spinosaurus (spiny lizard)', 12.2],
-  ['Supersaurus (super lizard)', 30.5],
-  ['Tyrannosaurus (tyrant lizard)', 15.2],
-  ['Ultrasaurus (ultra lizard)', 30.5],
-  ['Velociraptor (swift robber)', 1.8]
-]
-
-export const options = {
-  title: 'Lengths of dinosaurs, in meters',
-  legend: { position: 'none' }
+const Histogramas = () => {
+  const [ano, setAno] = useState('2024')
+  return (
+    <>
+      <select
+        value={ano}
+        onChange={(e) => setAno(e.target.value)}
+        name=""
+        id=""
+      >
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+      </select>
+      <div>
+        <Chart
+          chartType="Histogram"
+          width="100%"
+          height="500px"
+          data={Municipio}
+          options={{
+            title: `Casos x Municípios - ${ano}`,
+            legend: { position: 'none' },
+            hAxis: { title: 'Casos' },
+            vAxis: { title: 'Municípios' }
+          }}
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+          repellendus fuga, libero reiciendis, laborum deserunt minima quas
+          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
+          laborum vitae adipisci.
+        </p>
+      </div>
+      <div>
+        <Chart
+          chartType="Histogram"
+          width="100%"
+          height="500px"
+          data={Meses}
+          options={{
+            title: `Casos x Meses - ${ano}`,
+            legend: { position: 'none' },
+            hAxis: { title: 'Casos' },
+            vAxis: { title: 'Meses' }
+          }}
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+          repellendus fuga, libero reiciendis, laborum deserunt minima quas
+          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
+          laborum vitae adipisci.
+        </p>
+      </div>
+      <div>
+        <Chart
+          chartType="Histogram"
+          width="100%"
+          height="500px"
+          data={Ano}
+          options={{
+            title: `Casos x Ano`,
+            legend: { position: 'none' },
+            hAxis: { title: 'Casos' },
+            vAxis: { title: 'Ano' }
+          }}
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+          repellendus fuga, libero reiciendis, laborum deserunt minima quas
+          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
+          laborum vitae adipisci.
+        </p>
+      </div>
+      <div>
+        <Chart
+          chartType="Histogram"
+          width="100%"
+          height="500px"
+          data={FaixaEtaria}
+          options={{
+            title: `Casos x Faixa etária - ${ano}`,
+            legend: { position: 'none' },
+            hAxis: { title: 'Casos' },
+            vAxis: { title: 'Faixa etária' }
+          }}
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+          repellendus fuga, libero reiciendis, laborum deserunt minima quas
+          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
+          laborum vitae adipisci.
+        </p>
+      </div>
+    </>
+  )
 }
 
-const Histograma = () => (
-  <Chart
-    chartType="Histogram"
-    width="100%"
-    height="100%"
-    data={data}
-    options={options}
-  />
-)
-
-export default Histograma
+export default Histogramas

@@ -8,6 +8,10 @@ import { NavegadorContainer } from './styles'
 
 const paginas = [
   {
+    title: 'Home',
+    page: <></>
+  },
+  {
     title: 'Histogramas',
     page: <Histograma />
   },
@@ -26,10 +30,6 @@ const paginas = [
   {
     title: 'Gráficos de Barra',
     page: <Barra />
-  },
-  {
-    title: 'Home',
-    page: <></>
   }
 ]
 
