@@ -21,10 +21,19 @@ MAPEAMENTO_ANOS = {
     4:"2024",
 }
 
+DADOS_POPULACAO = {
+    "2020":4039277,
+    "2021":4059905,
+    "2022":3974687,
+    "2023":3974687,
+    "2024":4145040,
+
+}
+
 @router.on_event("startup")
 def load_data():
     global DADOS
-    
+
     dados_por_ano = {}
     total_absoluto = 0
 
@@ -65,6 +74,18 @@ def load_data():
     else:
         print("not ok")
 
+
+@router.get("dados/populacao")
+async def getDadosPopulacao(ano:Optional[str]=None):
+    
+    if ano:
+        try:
+            return DADOS_POPULACAO[ano]
+        except KeyError:
+            return {"Error": "Ano não encontrado"}
+    
+
+    return DADOS_POPULACAO
 
 @router.get("/dados")
 async def getAllDados():
