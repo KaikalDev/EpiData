@@ -75,7 +75,7 @@ def load_data():
         print("not ok")
 
 
-@router.get("dados/populacao")
+@router.get("/dados/populacao")
 async def getDadosPopulacao(ano:Optional[str]=None):
     
     if ano:
@@ -91,8 +91,8 @@ async def getDadosPopulacao(ano:Optional[str]=None):
 async def getAllDados():
     return DADOS
 
-@router.get("/dados/anos")
-async def getDadosFromAnos(ano:Optional[str]=None):
+@router.get("/dados/criterios")
+async def getDadosFromCriterios(ano:Optional[str]=None):
 
     if ano:
         try:
@@ -101,6 +101,24 @@ async def getDadosFromAnos(ano:Optional[str]=None):
             return {"Error": "Ano não encontrado! Coloque no intervalo de 2020-2024"}
 
     return DADOS.casos
+
+@router.get("/dados/total")
+async def getTotalDeDados(ano:Optional[str]=None):
+
+
+    if not ano:
+        dados = {
+            "totalParaiba": DADOS.casos.total,
+            "2021": DADOS.casos.anos.get("2021").total,
+            "2020": DADOS.casos.anos.get("2020").total,
+            "2022": DADOS.casos.anos.get("2022").total,
+            "2023": DADOS.casos.anos.get("2023").total,
+            "2024": DADOS.casos.anos.get("2024").total,
+    }
+    else:
+        return DADOS.casos.anos.get(ano).total
+
+    return dados
 
 @router.get("/dados/anos/{ano}/{criterio}")
 async def getDadosFromCriterio(ano:str, criterio:str, municipio:Optional[str]=None):
