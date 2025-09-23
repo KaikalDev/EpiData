@@ -12,6 +12,7 @@ class DoencaAnalisada(BaseModel):
     nome:str
     estado_analisado:str
     casos:Optional[Casos] = None
+    nomes_municipios_analisados:Optional[list] = None
 
 
 class CasosPorAno(BaseModel):
