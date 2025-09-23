@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react'
 import Chart from 'react-google-charts'
-import { GetDadosAnos, GetDadosFaixaEtaria, GetDadosMeses } from '../../Data'
+import {
+  GetDadosAnos,
+  GetDadosFaixaEtaria,
+  GetDadosMeses,
+  GetDadosPorMunicipio
+} from '../../Data'
 
 type TypeDado = [string, number | string][]
 
@@ -8,6 +13,9 @@ const Barra = () => {
   const [ano, setAno] = useState('2024')
   const [dadosMes, setDadosMes] = useState<TypeDado>([['Mes', 'Casos']])
   const [dadosAno, setDadosAno] = useState<TypeDado>([['Ano', 'Casos']])
+  const [dadosMunicipio, setDadosMunicipio] = useState<TypeDado>([
+    ['Municipio', 'Casos']
+  ])
   const [dadosFaixaEtaria, setDadosFaixaEtaria] = useState<TypeDado>([
     ['Faixa Etaria', 'Casos']
   ])
@@ -17,9 +25,14 @@ const Barra = () => {
       const fetchMes = await GetDadosMeses(ano as Ano)
       const fetchFaixaEtaria = await GetDadosFaixaEtaria(ano as Ano)
       const fetchAno = await GetDadosAnos()
+      const fetchMunicipio = await GetDadosPorMunicipio({
+        ano: ano as Ano,
+        quantidade: 10
+      })
       setDadosMes(fetchMes)
       setDadosAno(fetchAno)
       setDadosFaixaEtaria(fetchFaixaEtaria)
+      setDadosMunicipio(fetchMunicipio)
     }
 
     fetchData()
@@ -38,12 +51,12 @@ const Barra = () => {
         <option value="2021">2021</option>
         <option value="2020">2020</option>
       </select>
-      {/* <div>
+      <div>
         <Chart
           chartType="ColumnChart"
           width="100%"
           height="500px"
-          data={Municipio}
+          data={dadosMunicipio}
           options={{
             title: `Casos X Município - ${ano}`,
             legend: { position: 'none' },
@@ -62,7 +75,7 @@ const Barra = () => {
           voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
           laborum vitae adipisci.
         </p>
-      </div> */}
+      </div>
       <div>
         <Chart
           chartType="ColumnChart"

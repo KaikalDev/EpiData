@@ -21,7 +21,9 @@ export const GetDadosByCriterio = async ({
 
 export const GetDadosAno = async (ano: Ano) => {
   try {
-    const response = await fetch(`http://127.0.0.1:5000/api/dados/anos/${ano}`)
+    const response = await fetch(
+      `http://127.0.0.1:5000/api/dados/total?ano=${ano}`
+    )
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
     const data = await response.json()

@@ -3,16 +3,17 @@ import MedidasTendencias from '../Graficos/MedidasTendencia'
 import Pizza from '../Graficos/Pizza'
 import { NavegadorContainer } from './styles'
 import Barra from '../Graficos/Barra'
+import Histograma from '../Graficos/Histograma'
 
 const paginas = [
   {
     title: 'Home',
     page: <></>
   },
-  // {
-  //   title: 'Histogramas',
-  //   page: <Histograma />
-  // },
+  {
+    title: 'Histogramas',
+    page: <Histograma />
+  },
   {
     title: 'Medidas de Tendência Central e Dispersão',
     page: <MedidasTendencias />

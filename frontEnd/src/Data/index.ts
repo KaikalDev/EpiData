@@ -68,13 +68,35 @@ export const GetDadosAnos = async (): Promise<LinhaDado[]> => {
 
   for (const ano of anos) {
     const dados = await GetDadosAno(ano)
-    if (!dados) continue
+    if (dados == null) continue
 
-    const total = dados['Total'] ?? {}
-    const valor = Number(total['Total'] ?? 0)
-
+    const valor = Number(dados)
     resultados.push([ano.toString(), valor])
   }
 
   return resultados
+}
+
+export const GetDadosPorMunicipio = async ({
+  ano,
+  quantidade
+}: {
+  ano: Ano
+  quantidade?: number
+}): Promise<LinhaDado[]> => {
+  const dados = await GetDados({ ano, criterio: 'porMes' })
+  if (!dados) return [['Município', 'Casos']]
+
+  const municipios = Object.keys(dados)
+    .filter((municipio) => municipio.toLowerCase() !== 'total')
+    .map((municipio) => {
+      const total = Number(dados[municipio]['Total'] ?? 0)
+      return [municipio, total] as LinhaDado
+    })
+
+  municipios.sort((a, b) => Number(b[1]) - Number(a[1]))
+
+  const selecionados = quantidade ? municipios.slice(0, quantidade) : municipios
+
+  return [['Município', 'Casos'], ...selecionados]
 }
