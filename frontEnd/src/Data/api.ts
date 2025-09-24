@@ -7,7 +7,7 @@ export const GetDadosByCriterio = async ({
 }) => {
   try {
     const response = await fetch(
-      `http://127.0.0.1:5000/api/dados/anos/${ano}/${criterio}`
+      `http://localhost:5000/dados/anos/${ano}/${criterio}`
     )
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
@@ -21,9 +21,20 @@ export const GetDadosByCriterio = async ({
 
 export const GetDadosAno = async (ano: Ano) => {
   try {
-    const response = await fetch(
-      `http://127.0.0.1:5000/api/dados/total?ano=${ano}`
-    )
+    const response = await fetch(`http://localhost:5000/dados/total?ano=${ano}`)
+    if (!response.ok) throw new Error('Erro ao buscar dados')
+
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.error('Erro no pegar os dados:', error)
+    return null
+  }
+}
+
+export const GetDadosIBGE = async (ano: Ano) => {
+  try {
+    const response = await fetch(`http://localhost:5000/dados/ibge/${ano}`)
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
     const data = await response.json()

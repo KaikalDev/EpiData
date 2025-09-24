@@ -7,8 +7,6 @@ import {
   GetDadosPorMunicipio
 } from '../../Data'
 
-type TypeDado = [string, number | string][]
-
 const Histogramas = () => {
   const [ano, setAno] = useState('2024')
   const [dadosMes, setDadosMes] = useState<TypeDado>([['Mes', 'Casos']])
@@ -65,10 +63,16 @@ const Histogramas = () => {
           }}
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-          repellendus fuga, libero reiciendis, laborum deserunt minima quas
-          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
-          laborum vitae adipisci.
+          <b>Análise Diagnóstica:</b> O epicentro geográfico da doença mudou ao
+          longo dos anos, passando de Queimadas (2021-2022) para Alagoa Grande
+          (2023) e, em 2024, para Campina Grande, que se tornou o principal foco
+          do surto.
+          <br />
+          <br />
+          <b>Análise Descritiva:</b> A mudança de epicentro aponta para a
+          importância do controle local do vetor, que depende do engajamento da
+          população na eliminação de criadouros, mesmo em cidades com bom
+          saneamento básico.
         </p>
       </div>
       <div>
@@ -85,10 +89,14 @@ const Histogramas = () => {
           }}
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-          repellendus fuga, libero reiciendis, laborum deserunt minima quas
-          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
-          laborum vitae adipisci.
+          <b>Análise Diagnóstica:</b> O padrão sazonal dos surtos variou: os
+          picos foram no início do ano em 2020 e 2024 e se deslocaram para o
+          meio do ano (junho/julho) em 2021 e 2022.
+          <br />
+          <br />
+          <b>Análise Descritiva:</b> A flutuação dos picos sazonais está
+          diretamente ligada à variação dos padrões de precipitação anual, que
+          influencia a proliferação do mosquito.
         </p>
       </div>
       <div>
@@ -105,10 +113,14 @@ const Histogramas = () => {
           }}
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-          repellendus fuga, libero reiciendis, laborum deserunt minima quas
-          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
-          laborum vitae adipisci.
+          <b>Análise Diagnóstica:</b> O cenário do Zika nos gráficos da Paraíba
+          foi de surtos cíclicos, com picos em 2021, 2022 e 2024, intercalados
+          por baixa incidência em 2020 e 2023.
+          <br />
+          <br />
+          <b>Análise Descritiva:</b> O padrão cíclico pode ser resultado da
+          interação entre fatores climáticos, como calor e chuva, que propiciam
+          o mosquito, e o nível de imunidade da população aos surtos.
         </p>
       </div>
       <div>
@@ -125,10 +137,14 @@ const Histogramas = () => {
           }}
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-          repellendus fuga, libero reiciendis, laborum deserunt minima quas
-          voluptas earum iusto eum! Magni id earum assumenda, incidunt officia
-          laborum vitae adipisci.
+          <b>Análise Diagnóstica:</b> A alta incidência nas faixas etárias de 20
+          a 39 anos indica um impacto direto na força de trabalho e na economia
+          do estado.
+          <br />
+          <br />
+          <b>Análise Descritiva:</b> A alta incidência entre 20 e 39 anos causa
+          absenteísmo no trabalho e onera o sistema de saúde, gerando perdas
+          socioeconômicas.
         </p>
       </div>
     </>

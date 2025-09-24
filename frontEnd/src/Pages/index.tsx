@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import MedidasTendencias from '../Graficos/MedidasTendencia'
 import Pizza from '../Graficos/Pizza'
-import { NavegadorContainer } from './styles'
+import { GraficosContainer, NavegadorContainer } from './styles'
 import Barra from '../Graficos/Barra'
 import Histograma from '../Graficos/Histograma'
+import Home from '../Graficos/Home'
+import Dispersao from '../Graficos/Dispersao'
 
 const paginas = [
   {
     title: 'Home',
-    page: <></>
+    page: <Home />
   },
   {
     title: 'Histogramas',
@@ -18,10 +20,10 @@ const paginas = [
     title: 'Medidas de Tendência Central e Dispersão',
     page: <MedidasTendencias />
   },
-  // {
-  //   title: 'Gráficos de Dispersão',
-  //   page: <Dispersao />
-  // },
+  {
+    title: 'Gráficos de Dispersão',
+    page: <Dispersao />
+  },
   {
     title: 'Gráficos de Pizza',
     page: <Pizza />
@@ -49,7 +51,10 @@ const Page = () => {
           ))}
         </ul>
       </NavegadorContainer>
-      {active?.page}
+      <GraficosContainer>
+        <h2 className="Title">{active?.title}</h2>
+        {active?.page}
+      </GraficosContainer>
     </section>
   )
 }

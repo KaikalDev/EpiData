@@ -1,4 +1,8 @@
-import { GetDadosByCriterio as GetDados, GetDadosAno } from './api'
+import {
+  GetDadosByCriterio as GetDados,
+  GetDadosAno,
+  GetDadosIBGE
+} from './api'
 
 type LinhaDado = [string, number | string]
 type DadosMeses = [string, string] | LinhaDado
@@ -77,6 +81,14 @@ export const GetDadosAnos = async (): Promise<LinhaDado[]> => {
   return resultados
 }
 
+export const GetTotalAno = async (ano: Ano) => {
+  const dados = await GetDadosAno(ano)
+
+  const valor = Number(dados)
+
+  return valor
+}
+
 export const GetDadosPorMunicipio = async ({
   ano,
   quantidade
@@ -99,4 +111,73 @@ export const GetDadosPorMunicipio = async ({
   const selecionados = quantidade ? municipios.slice(0, quantidade) : municipios
 
   return [['Município', 'Casos'], ...selecionados]
+}
+
+export const GetDadosPorMunicipioObj = async (
+  ano: Ano
+): Promise<{ municipio: string; casos: number }[]> => {
+  const dados = await GetDados({ ano, criterio: 'porMes' })
+  if (!dados) return []
+
+  const municipios = Object.keys(dados)
+    .filter((municipio) => municipio.toLowerCase() !== 'total')
+    .map((municipio) => {
+      const total = Number(dados[municipio]['Total'] ?? 0)
+      return { municipio, casos: total }
+    })
+
+  municipios.sort((a, b) => b.casos - a.casos)
+
+  return municipios
+}
+
+export const GetDispercaoPopulacaoCaso = async (
+  ano: Ano
+): Promise<(string | number)[][]> => {
+  const dados = await GetDadosIBGE(ano)
+  if (!dados) return [['População', 'Casos']]
+
+  const dispersao = Object.keys(dados)
+    .filter((municipio) => municipio.toLowerCase() !== 'total')
+    .map((municipio) => {
+      const populacao = Number(dados[municipio]['População'] ?? 0)
+      const casos = Number(dados[municipio]['Total'] ?? 0)
+      return [populacao, casos]
+    })
+
+  return [['População', 'Casos'], ...dispersao]
+}
+
+export const GetDispercaoIDHMCaso = async (
+  ano: Ano
+): Promise<(string | number)[][]> => {
+  const dados = await GetDadosIBGE(ano)
+  if (!dados) return [['IDHM', 'Casos']]
+
+  const dispersao = Object.keys(dados)
+    .filter((municipio) => municipio.toLowerCase() !== 'total')
+    .map((municipio) => {
+      const idhm = Number(dados[municipio]['IDHM'] ?? 0)
+      const casos = Number(dados[municipio]['Total'] ?? 0)
+      return [idhm, casos]
+    })
+
+  return [['IDHM', 'Casos'], ...dispersao]
+}
+
+export const GetDispercaoPIBCaso = async (
+  ano: Ano
+): Promise<(string | number)[][]> => {
+  const dados = await GetDadosIBGE(ano)
+  if (!dados) return [['PIB', 'Casos']]
+
+  const dispersao = Object.keys(dados)
+    .filter((municipio) => municipio.toLowerCase() !== 'total')
+    .map((municipio) => {
+      const pib = Number(dados[municipio]['PIB'] ?? 0)
+      const casos = Number(dados[municipio]['Total'] ?? 0)
+      return [pib, casos]
+    })
+
+  return [['PIB', 'Casos'], ...dispersao]
 }
