@@ -1,14 +1,10 @@
-import {
-  GetDadosByCriterio as GetDados,
-  GetDadosAno,
-  GetDadosIBGE
-} from './api'
+import { GetDadosByCriterio, GetDadosAno, GetDadosIBGE } from './api'
 
 type LinhaDado = [string, number | string]
 type DadosMeses = [string, string] | LinhaDado
 
 export const GetDadosGenero = async (ano: Ano): Promise<LinhaDado[]> => {
-  const dados = await GetDados({ ano, criterio: 'porGenero' })
+  const dados = await GetDadosByCriterio({ ano, criterio: 'porGenero' })
 
   if (!dados) return [['Genero', 'Casos']]
 
@@ -22,7 +18,7 @@ export const GetDadosGenero = async (ano: Ano): Promise<LinhaDado[]> => {
 }
 
 export const GetDadosMeses = async (ano: Ano): Promise<DadosMeses[]> => {
-  const dados = await GetDados({ ano, criterio: 'porMes' })
+  const dados = await GetDadosByCriterio({ ano, criterio: 'porMes' })
 
   if (!dados) return [['Mes', 'Casos']]
 
@@ -37,7 +33,7 @@ export const GetDadosMeses = async (ano: Ano): Promise<DadosMeses[]> => {
 }
 
 export const GetDadosFaixaEtaria = async (ano: Ano): Promise<LinhaDado[]> => {
-  const dados = await GetDados({ ano, criterio: 'porFaixaEtaria' })
+  const dados = await GetDadosByCriterio({ ano, criterio: 'porFaixaEtaria' })
 
   if (!dados) {
     return [['Faixa Etária', 'Casos']]
@@ -96,7 +92,7 @@ export const GetDadosPorMunicipio = async ({
   ano: Ano
   quantidade?: number
 }): Promise<LinhaDado[]> => {
-  const dados = await GetDados({ ano, criterio: 'porMes' })
+  const dados = await GetDadosByCriterio({ ano, criterio: 'porMes' })
   if (!dados) return [['Município', 'Casos']]
 
   const municipios = Object.keys(dados)
@@ -116,7 +112,7 @@ export const GetDadosPorMunicipio = async ({
 export const GetDadosPorMunicipioObj = async (
   ano: Ano
 ): Promise<{ municipio: string; casos: number }[]> => {
-  const dados = await GetDados({ ano, criterio: 'porMes' })
+  const dados = await GetDadosByCriterio({ ano, criterio: 'porMes' })
   if (!dados) return []
 
   const municipios = Object.keys(dados)

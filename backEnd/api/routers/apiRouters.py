@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from ..leitor import leitor, leitor_
-from ..models import *
+from api.leitor import leitor, leitor_
+from api.models import *
 import os
 from typing import Optional
 router = APIRouter()
@@ -38,13 +38,14 @@ def load_data():
     total_absoluto = 0
 
     caminho_base = os.path.join("api", "data", "paraiba", "zika", "anos")
-    anos = os.listdir(caminho_base)
 
-    for indexAno, dir in enumerate(anos):
+    anos = sorted(os.listdir(caminho_base))
+
+    for dir in anos:
         criterios = {}
 
-        files = os.listdir(os.path.join(caminho_base, dir))
-        ano = MAPEAMENTO_ANOS.get(indexAno)
+        files = sorted(os.listdir(os.path.join(caminho_base, dir)))
+        ano = dir 
         total_por_ano = None
 
         for index, file in enumerate(files):
@@ -54,7 +55,7 @@ def load_data():
                 dados_por_criterio = leitor_(caminho_arquivo, ano)
                 if not total_por_ano:
                     total_por_ano = dados_por_criterio.municipios.get("Total").get("Total")
-                    total_absoluto+= total_por_ano
+                    total_absoluto += total_por_ano
                 criterios[nomeCriterio] = dados_por_criterio
         dados_por_ano[ano] = CasosPorAno(total=total_por_ano, criterios=criterios)
 
@@ -69,10 +70,7 @@ def load_data():
         casos=casos
     )
 
-    if DADOS:
-        print("ok")
-    else:
-        print("not ok")
+    print("ok" if DADOS else "not ok")
 
 
 @router.get("/dados/populacao")

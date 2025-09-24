@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .leitor import leitor_, leitorIBGE
-from .models import *
+from api.leitor import leitor_, leitorIBGE
+from api.models import *
 import os
 import copy
 from typing import Optional

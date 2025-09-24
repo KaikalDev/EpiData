@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from .models import *
+from api.models import *
 
 
 def leitor(caminho, nomeCriterio):

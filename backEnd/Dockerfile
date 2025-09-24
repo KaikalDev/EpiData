@@ -18,4 +18,5 @@ COPY api/ ./api
 EXPOSE 5000
 
 # Comando para rodar a API
-CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-5000}"]
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "5000"]
+
