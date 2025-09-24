@@ -1,3 +1,5 @@
+const baseUrl = 'https://epidata-api.onrender.com'
+
 export const GetDadosByCriterio = async ({
   ano,
   criterio
@@ -6,9 +8,7 @@ export const GetDadosByCriterio = async ({
   criterio: 'porMes' | 'porFaixaEtaria' | 'porGenero'
 }) => {
   try {
-    const response = await fetch(
-      `http://localhost:5000/dados/anos/${ano}/${criterio}`
-    )
+    const response = await fetch(`${baseUrl}/dados/anos/${ano}/${criterio}`)
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
     const data = await response.json()
@@ -21,7 +21,7 @@ export const GetDadosByCriterio = async ({
 
 export const GetDadosAno = async (ano: Ano) => {
   try {
-    const response = await fetch(`http://localhost:5000/dados/total?ano=${ano}`)
+    const response = await fetch(`${baseUrl}/dados/total?ano=${ano}`)
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
     const data = await response.json()
@@ -34,7 +34,7 @@ export const GetDadosAno = async (ano: Ano) => {
 
 export const GetDadosIBGE = async (ano: Ano) => {
   try {
-    const response = await fetch(`http://localhost:5000/dados/ibge/${ano}`)
+    const response = await fetch(`${baseUrl}/dados/ibge/${ano}`)
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
     const data = await response.json()
