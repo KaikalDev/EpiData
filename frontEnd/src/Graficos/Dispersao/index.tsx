@@ -88,6 +88,21 @@ const Dispersao = () => {
             colors: ['#DB4437']
           }}
         />
+        <p>
+          <b>Análise Diagnóstica:</b> Entre 2020 e 2024, os municípios da
+          Paraíba apresentaram diferenças significativas no PIB, o que impactou
+          de forma desigual o enfrentamento ao Zika vírus.
+          <br />
+          <br />
+          <b>Análise Descritiva:</b> A baixa disponibilidade de verbas em
+          cidades com PIB reduzido é um fator determinante para a persistência e
+          disseminação do Zika vírus. A ausência de investimentos adequados em
+          infraestrutura urbana e saúde pública aumenta a proliferação do Aedes
+          aegypti, gerando maior risco de epidemias locais. Portanto, o PIB
+          municipal funciona como indicador da vulnerabilidade: quanto menor a
+          base econômica, maior a probabilidade de incidência do Zika por falhas
+          estruturais de prevenção.
+        </p>
       </div>
     </>
   )

@@ -39,6 +39,10 @@ DADOS_POPULACAO = {
 
 }
 
+@app.get("/")
+def root():
+    return {"msg": "Hello from FastAPI on Vercel!"}
+
 @app.on_event("startup")
 def load_data():
     global DADOS

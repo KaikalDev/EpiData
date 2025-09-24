@@ -103,6 +103,16 @@ const Pizza = () => {
           <b>Análise Descritiva:</b> A alta incidência entre 20 e 39 anos causa
           absenteísmo no trabalho e onera o sistema de saúde, gerando perdas
           socioeconômicas.
+          <br />
+          <br />
+          <b>Análise Diagnóstica:</b> A alta incidência nas faixas etárias de 20
+          a 39 anos indica um impacto direto na força de trabalho e na economia
+          do estado.
+          <br />
+          <br />
+          <b>Análise Descritiva:</b> A alta incidência nessa faixa etária se
+          deve à maior mobilidade social e exposição ao mosquito em ambientes de
+          trabalho e estudo, com sérias implicações para gestantes.
         </p>
       </div>
     </>
