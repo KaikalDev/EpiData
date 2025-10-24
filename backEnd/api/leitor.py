@@ -285,6 +285,7 @@ def normalize_municipio(municipio):
 
 
 def leitor_(caminho, ano):
+    #aplica encoding para ler melhor os caracteres especiais
     df = pd.read_csv(caminho, encoding="cp1252", delimiter=";", skipfooter=20, skiprows=3, engine='python')
     df_headers = df.columns.tolist()
     df_headers.pop(0)
@@ -292,7 +293,7 @@ def leitor_(caminho, ano):
     lista_dados_dos_municipios = {}
     lista_nomes_dos_municipios = []
     for i, row in df.iterrows():
-        
+        #para deixar o nome do município capitalizado e com os espaços necessários
         municipio = normalize_municipio("".join((list(filter(lambda letra: letra.isalpha(), str(row.iloc[0]))))).strip())
         
         if municipio is None:
@@ -340,7 +341,7 @@ def leitorIBGE(municipiosAnalisados, dadosPorAno, caminho=None):
 
     dados.rename(columns=novos_nomes, inplace=True)
 
-
+    #somente as colunas necessárias
     for col in dados.columns.tolist():
         if col not in ["Município", "População Censo (2022)", "IDHM (2010)", "PIB per capita (2021)"]:
             dados.drop(columns=[col], inplace=True)
@@ -380,11 +381,11 @@ def leitorIBGE(municipiosAnalisados, dadosPorAno, caminho=None):
         return municipio_limpo
     
     
-
+    #aplica a limpeza para cada município
     dados["Município"] = dados["Município"].apply(limpa_municipio)
-
+    # retorna uma máscara que contenha os municípios que estejam na lista dos analisados
     filtragem = dados['Município'].isin(municipiosAnalisados)
-
+    # aplica a filtragem no dataset
     dados_filtrados_pelos_municipios_analisados = dados[filtragem]
 
     dados_municipios = {}
