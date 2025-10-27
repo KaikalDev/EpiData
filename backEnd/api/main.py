@@ -5,8 +5,10 @@ from api.models import *
 import os
 import copy
 import pandas as pd
+from datetime import datetime
 from sklearn.ensemble import RandomForestRegressor
-from numpy import round
+import numpy as np
+import json
 from typing import Optional
 app = FastAPI()
 
@@ -104,69 +106,236 @@ def get_random_forest_treinado_via_casos_totais_por_mes(data):
 
     return model
 
+# PREVISÃO POR MUNICÍPIO
 
-@app.get("/analisar/casos/total_por_mes/{ano}")
-async def prever_total_casos_por_mes(ano:str):
+
+from collections import defaultdict
+
+def get_municipios_data():
+    try:
+        # Acessa os dados anuais do seu objeto global DADOS
+        dados_anos = DADOS.casos.anos.items()
+    except NameError:
+        # Caso o DADOS não esteja definido (para testes ou ambiente local)
+        print("ERRO: O objeto DADOS não está acessível.")
+        return {}
+    except AttributeError:
+        print("ERRO: A estrutura DADOS.casos.anos não foi encontrada.")
+        return {}
+
+    municipios_data = defaultdict(lambda: defaultdict(dict))
     
-    if ano and int(ano) >= 2025:
-        meses_map_reverso = {
-            1: "Jan",
-            2: "Fev",
-            3: "Mar",
-            4: "Abr",
-            5: "Mai",
-            6: "Jun",
-            7: "Jul",
-            8: "Ago",
-            9: "Set",
-            10: "Out",
-            11: "Nov",
-            12: "Dez"
-        }
+    for ano, dado_ano in dados_anos:
+        # Acessa os dados mensais por município dentro dos critérios
+        dados_por_municipio = dado_ano.criterios.get("pormes").municipios
 
-        previsoes = {}
+        for municipio, dados_meses in dados_por_municipio.items():
+            if municipio != "Total":
+                for mes, valor in dados_meses.items():
+                    if mes != "Total":
+                        municipios_data[municipio][ano][mes] = valor
+    return municipios_data
 
-        base_previsao = get_total_dados_por_mes()["2024"]["Dez"] #último mês que tem dados
+
+def get_df_global_dados_reestruturados():
+    municipios_data = get_municipios_data()
+    meses_map = {"Jan": 1, "Fev": 2, "Mar": 3, "Abr": 4, "Mai": 5, "Jun": 6, 
+                 "Jul": 7, "Ago": 8, "Set": 9, "Out": 10, "Nov": 11, "Dez": 12}
+    
+    dados_list = []
+    
+    for municipio, anos_data in municipios_data.items():
+        all_series = pd.Series(dtype=float)
+        serie_casos = []
         
-        df_treino = get_df_total_dados_por_mes()
-        model = get_random_forest_treinado_via_casos_totais_por_mes(df_treino)
-
-        # para as diferenças dos anos, se for 2026, processará a previsão para 2026 passando também pelos dados de 2025 por exemplo
-        anos_a_analisar = []
-
-        #para conseguir em ordem descrecente os anos até o ano da análise atual
-        for i in range(0, int(ano) - 2024):
-            anos_a_analisar.append(str(2025 + i))
-        for ano_analisado in anos_a_analisar:
-
-            for mes in range(1, 13):
-
-                x_previsao = pd.DataFrame({
-                    "Casos_Mes_Anterior": [base_previsao],
-                    "Mes_Num": [mes]
-                })
-
-                y_previsao = model.predict(x_previsao)[0] #retorna lista, então, o indice 0
-                previsao_arredondada = max(0, int(round(y_previsao)))
-                
-                
-                base_previsao = y_previsao
-                if ano_analisado not in previsoes:
-                    previsoes[ano_analisado] = {}
-                previsoes[ano_analisado].update({meses_map_reverso[mes]:previsao_arredondada})
+        # Constrói a série temporal e coleta dados para as features de escala/contagem
+        for ano, meses_data in anos_data.items():
+            indexed_data = {}
+            for mes, total_casos in meses_data.items():
+                index = f"{ano}-{meses_map[mes]:02d}"
+                indexed_data[index] = total_casos
+                serie_casos.append(total_casos)
             
-        
-        total_previsoes_ano = {}
-        for ano_previsao, dados_mes in previsoes.items():
-            total = 0
-            for valor in dados_mes.values():
-                total += valor
-            total_previsoes_ano[ano_previsao] = total
-        
+            new_series = pd.Series(indexed_data)
+            all_series = pd.concat([all_series, new_series])
 
-        return {"total":total_previsoes_ano, "previsoes": previsoes}
-    else:
-        return {"status": "error", "message":"Ano inválido! Somente é aceito de 2025 para cima para a previsão"}
+        # Calcula as Features de Escala (X4) e Contagem (X5)
+        media_historica = np.mean(serie_casos) if serie_casos else 0
+        log_media_historica = np.log1p(media_historica) # Log(1 + Média)
+        contagem_meses = len(all_series)
+
+        # Cria o DataFrame do Município
+        df_municipio = all_series.to_frame(name="Casos")
+        df_municipio.sort_index(inplace=True)
+        
+        df_municipio["Casos_Mes_Anterior"] = df_municipio["Casos"].shift(1)
+        df_municipio["municipio"] = municipio
+        
+        df_municipio["Log_Media_Casos"] = log_media_historica
+        df_municipio["Contagem_Meses"] = contagem_meses
+        
+        dados_list.append(df_municipio)
+
+    # Combina em um único DataFrame global
+    df_global = pd.concat(dados_list)
+    df_global.dropna(inplace=True)
+
+    # Cria a feature Mes_Num (X2)
+    df_global["Mes_Num"] = df_global.index.str[5:].astype(int)
+    
+    # Cria o ID do Município (X3) e o mapeamento
+    df_global['Municipio_Encoded'], unique_munis = pd.factorize(df_global['municipio'])
+    municipio_mapping = dict(zip(unique_munis, range(len(unique_munis))))
+
+    # Mapeamento das features constantes para uso na PREVISÃO (evitando recalculo)
+    media_mapping = df_global.drop_duplicates(subset=['Municipio_Encoded']).set_index('Municipio_Encoded')['Log_Media_Casos']
+    contagem_mapping = df_global.drop_duplicates(subset=['Municipio_Encoded']).set_index('Municipio_Encoded')['Contagem_Meses']
+
+    df_global.drop(columns=['municipio'], inplace=True)
+    
+    return df_global, municipio_mapping, media_mapping, contagem_mapping
+
+# ==============================================================================
+# 2. FUNÇÃO DE TREINAMENTO
+# ==============================================================================
+
+def get_global_random_forest_treinado(df_global):
+    """
+    OBJETIVO: Treinar o modelo global de Random Forest Regressor.
+    
+    DETALHES: O modelo é treinado usando todas as 5 features criadas.
+    """
+    # Define todas as features de treino (X)
+    feature_train = df_global[["Casos_Mes_Anterior", "Mes_Num", "Municipio_Encoded", "Log_Media_Casos", "Contagem_Meses"]]
+    # Define a variável target (Y)
+    target_train = df_global["Casos"]
+
+    model = RandomForestRegressor(n_estimators=100, random_state=17)
+    model.fit(feature_train, target_train)
+
+    return model
+
+# ==============================================================================
+# 3. FUNÇÃO DE PREVISÃO
+# ==============================================================================
+
+def prever_casos_2026_modelo_global(df_global, modelo_global, municipio_mapping, media_mapping, contagem_mapping):
+    # Encontra o último caso real (semente) para cada município
+    df_last_case = df_global.reset_index(names=['data_mes']).groupby('Municipio_Encoded')["Casos"].last()
+    
+    previsoes_raw = {}
+    
+    for municipio_nome, municipio_id in municipio_mapping.items():
+        
+        # Pega o último caso real do histórico ou assume 0
+        try:
+            ultimo_caso_real = df_last_case.loc[municipio_id]
+        except KeyError:
+            ultimo_caso_real = 0 
+            
+        # Pega as features constantes do município
+        log_media_caso = media_mapping.get(municipio_id, 0.0)
+        contagem_meses = contagem_mapping.get(municipio_id, 0.0)
+            
+        proximo_mes_anterior = ultimo_caso_real
+        previsoes_mensais = {}
+        
+        for mes in range(1, 13): # Previsão para Jan (1) a Dez (12)
+            
+            # Monta as features para a previsão do mês atual
+            features_previsao = pd.DataFrame({
+                "Casos_Mes_Anterior": [proximo_mes_anterior],
+                "Mes_Num": [mes],
+                "Municipio_Encoded": [municipio_id],
+                "Log_Media_Casos": [log_media_caso],
+                "Contagem_Meses": [contagem_meses]
+            })
+            
+            previsao_mes_atual = modelo_global.predict(features_previsao)[0]
+            previsao_arredondada = max(0, round(previsao_mes_atual))
+            
+            nome_mes = datetime.strptime(str(mes), "%m").strftime("%b")
+            previsoes_mensais[nome_mes] = previsao_arredondada
+            
+            # Atualiza a semente para a próxima iteração
+            proximo_mes_anterior = previsao_arredondada 
+            
+        previsoes_raw[municipio_nome] = {
+            "total_casos_2026": sum(previsoes_mensais.values()),
+            "previsoes_mensais_2026": previsoes_mensais
+        }
+        
+    return previsoes_raw
+
+# ==============================================================================
+# 4. FUNÇÃO PRINCIPAL E FORMATAÇÃO DA RESPOSTA
+# ==============================================================================
+def get_previsao_municipios_2026_modelo_global():
+    # Prepara os dados
+    try:
+        df_global, municipio_mapping, media_mapping, contagem_mapping = get_df_global_dados_reestruturados()
+    except Exception as e:
+        return {"erro": f"Falha na preparação dos dados. Verifique a estrutura de DADOS. Erro: {e}"}
+
+    # Se o DataFrame global estiver vazio (sem dados válidos), retorna erro
+    if df_global.empty:
+         return {"erro": "Nenhum dado válido encontrado para treinamento. Verifique a estrutura de DADOS."}
+    
+    # Treina o modelo
+    modelo_global = get_global_random_forest_treinado(df_global)
+    
+    #  Faz as previsões
+    previsoes_raw = prever_casos_2026_modelo_global(df_global, modelo_global, municipio_mapping, media_mapping, contagem_mapping)
+    
+    #  Formata o resultado
+    resultado_api = []
+    total_geral_2026 = 0
+    
+    for municipio, dados_previsao in previsoes_raw.items():
+        total_casos = dados_previsao["total_casos_2026"]
+        total_geral_2026 += total_casos
+        
+        resultado_api.append({
+            "municipio": municipio,
+            "total": total_casos,
+            "previsoes_mensais": dados_previsao["previsoes_mensais_2026"]
+        })
+        
+    # Ordena para a saída final
+    resultado_api.sort(key=lambda x: x["total"], reverse=True)
+    
+    output_final = {
+        "total_geral": total_geral_2026,
+        "previsoes_por_municipio": resultado_api
+    }
+
+    return output_final
+
+
+@app.get("/analisar/casos/total_mensal")
+async def get_total_mensal_2026():
+    dados = get_previsao_municipios_2026_modelo_global()
+
+    soma = {}
+    for dado in dados.get("previsoes_por_municipio"):
+        dados_mensal = dado["previsoes_mensais"]
+
+        for mes, valor in dados_mensal.items():
+            if mes not in soma:
+                soma[mes] = 0
+            soma[mes] += valor
+    print(soma)
+        
+    return {"total_mensal": soma}
+
+@app.get("/analisar/casos/total_por_municipio")
+async def get_total_municipios_2026():
+    dados = get_previsao_municipios_2026_modelo_global()
+    
+    
+    
+    return dados
+
 
 @app.get("/")
 def root():
