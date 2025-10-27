@@ -1,4 +1,4 @@
-const baseUrl = 'https://epidata-api.onrender.com'
+const baseUrl = 'http://127.0.0.1:5000'
 
 export const GetDadosByCriterio = async ({
   ano,
@@ -35,6 +35,19 @@ export const GetDadosAno = async (ano: Ano) => {
 export const GetDadosIBGE = async (ano: Ano) => {
   try {
     const response = await fetch(`${baseUrl}/dados/ibge/${ano}`)
+    if (!response.ok) throw new Error('Erro ao buscar dados')
+
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.error('Erro no pegar os dados:', error)
+    return null
+  }
+}
+
+export const GetAnalise = async () => {
+  try {
+    const response = await fetch(`${baseUrl}/analisar/casos/total_por_mes/2026`)
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
     const data = await response.json()

@@ -1,4 +1,9 @@
-import { GetDadosByCriterio, GetDadosAno, GetDadosIBGE } from './api'
+import {
+  GetDadosByCriterio,
+  GetDadosAno,
+  GetDadosIBGE,
+  GetAnalise
+} from './api'
 
 type LinhaDado = [string, number | string]
 type DadosMeses = [string, string] | LinhaDado
@@ -176,4 +181,20 @@ export const GetDispercaoPIBCaso = async (
     })
 
   return [['PIB', 'Casos'], ...dispersao]
+}
+
+export const GetAnaliseDados = async (): Promise<LinhaDado[]> => {
+  const dados = await GetAnalise()
+
+  if (!dados || !dados.previsoes || !dados.previsoes['2026'])
+    return [['Mês', 'Casos']]
+
+  const meses2026 = dados.previsoes['2026']
+
+  const linhas: LinhaDado[] = Object.entries(meses2026).map(([mes, casos]) => [
+    mes,
+    casos as number
+  ])
+
+  return [['Mês', 'Casos'], ...linhas]
 }
