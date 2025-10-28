@@ -2,7 +2,9 @@ import {
   GetDadosByCriterio,
   GetDadosAno,
   GetDadosIBGE,
-  GetAnalise
+  GetAnaliseMes,
+  GetAnaliseMunicipio,
+  MunicipioRisco
 } from './api'
 
 type LinhaDado = [string, number | string]
@@ -183,18 +185,91 @@ export const GetDispercaoPIBCaso = async (
   return [['PIB', 'Casos'], ...dispersao]
 }
 
-export const GetAnaliseDados = async (): Promise<LinhaDado[]> => {
-  const dados = await GetAnalise()
+export const GetAnaliseMesDados = async (): Promise<LinhaDado[]> => {
+  const dados = await GetAnaliseMes()
 
-  if (!dados || !dados.previsoes || !dados.previsoes['2026'])
-    return [['Mês', 'Casos']]
+  if (!dados || !dados.total_mensal) return [['Mes', 'Casos']]
 
-  const meses2026 = dados.previsoes['2026']
+  const total: Record<string, number> = dados.total_mensal
 
-  const linhas: LinhaDado[] = Object.entries(meses2026).map(([mes, casos]) => [
-    mes,
-    casos as number
+  return [
+    ['Mes', 'Casos'],
+    ...Object.entries(total).map(([mes, casos]) => [mes, casos] as LinhaDado)
+  ]
+}
+
+export const GetAnalisePorMunicipioObj = async (): Promise<
+  { municipio: string; casos: number }[]
+> => {
+  const dados = await GetAnaliseMunicipio()
+  if (!dados || !dados.previsoes_por_municipio) return []
+
+  const municipios = dados.previsoes_por_municipio.map(
+    (item: { municipio: string; total: number }) => ({
+      municipio: item.municipio,
+      casos: item.total
+    })
+  )
+
+  municipios.sort(
+    (
+      a: { municipio: string; casos: number },
+      b: { municipio: string; casos: number }
+    ) => b.casos - a.casos
+  )
+
+  return municipios
+}
+
+function escalaDinâmica(população: number, baseScale = 10000, alpha = 0.3) {
+  if (!população || população <= 0) return baseScale
+  const logPop = Math.log10(população)
+  // subtrai 4 para que cidades ~10k sejam a referência (log10(10_000) = 4)
+  return baseScale * (1 + alpha * (logPop - 4))
+}
+
+function riscoAjustadoPorPop(
+  totalPrevisto: number,
+  população: number,
+  opts?: { baseScale?: number; alpha?: number }
+) {
+  const baseScale = opts?.baseScale ?? 10000
+  const alpha = opts?.alpha ?? 0.3
+  const incidenciaBruta = população > 0 ? totalPrevisto / população : 0
+  const escala = escalaDinâmica(população, baseScale, alpha)
+  return incidenciaBruta * escala // já é um número "casos por X ajustado"
+}
+
+export const GetAnaliseSurtos = async (): Promise<MunicipioRisco[]> => {
+  const [dadosPrev, dadosIBGE] = await Promise.all([
+    GetAnaliseMunicipio(),
+    GetDadosIBGE('2024')
   ])
 
-  return [['Mês', 'Casos'], ...linhas]
+  if (!dadosPrev?.previsoes_por_municipio || !dadosIBGE) return []
+
+  const municipios = dadosPrev.previsoes_por_municipio
+    .map((item: any) => {
+      const { municipio, total } = item
+      const ibge = dadosIBGE[municipio]
+      if (!ibge || !ibge['População']) return null
+
+      const risco = (total / ibge['População']) * 10000
+
+      let classificacao: 'Baixo' | 'Moderado' | 'Alto' = 'Baixo'
+      if (risco >= 70) classificacao = 'Alto'
+      else if (risco >= 40) classificacao = 'Moderado'
+
+      return {
+        municipio,
+        risco: Number(risco.toFixed(1)),
+        classificacao,
+        populacao: ibge['População'],
+        totalPrevisto: total
+      }
+    })
+    .filter(Boolean)
+    .sort((a: MunicipioRisco, b: MunicipioRisco) => b.risco - a.risco)
+
+  return municipios
 }

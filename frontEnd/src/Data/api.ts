@@ -1,5 +1,17 @@
 const baseUrl = 'http://127.0.0.1:5000'
 
+export type MunicipioRisco = {
+  municipio: string
+  risco: number
+  classificacao: 'Baixo' | 'Moderado' | 'Alto'
+  crescimento: number
+  casosPorHabitante: number
+  idhm: number
+  populacao: number
+  casos_previstos: number
+  indice: number
+}
+
 export const GetDadosByCriterio = async ({
   ano,
   criterio
@@ -45,9 +57,24 @@ export const GetDadosIBGE = async (ano: Ano) => {
   }
 }
 
-export const GetAnalise = async () => {
+export const GetAnaliseMes = async () => {
   try {
-    const response = await fetch(`${baseUrl}/analisar/casos/total_por_mes/2026`)
+    const response = await fetch(`${baseUrl}/analisar/casos/total_mensal`)
+    if (!response.ok) throw new Error('Erro ao buscar dados')
+
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.error('Erro no pegar os dados:', error)
+    return null
+  }
+}
+
+export const GetAnaliseMunicipio = async () => {
+  try {
+    const response = await fetch(
+      `${baseUrl}/analisar/casos/total_por_municipio`
+    )
     if (!response.ok) throw new Error('Erro ao buscar dados')
 
     const data = await response.json()
