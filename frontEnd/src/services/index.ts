@@ -4,7 +4,8 @@ import {
   GetDadosIBGE,
   GetAnaliseMes,
   GetAnaliseMunicipio,
-  MunicipioRisco
+  MunicipioRisco,
+  GetIBGEFixo
 } from './api'
 
 type LinhaDado = [string, number | string]
@@ -222,10 +223,9 @@ export const GetAnalisePorMunicipioObj = async (): Promise<
 }
 
 export const GetAnaliseSurtos = async (): Promise<MunicipioRisco[]> => {
-  const [dadosPrev, dadosIBGE] = await Promise.all([
-    GetAnaliseMunicipio(),
-    GetDadosIBGE('2024')
-  ])
+  const dadosPrev = await GetAnaliseMunicipio()
+
+  const dadosIBGE = await GetIBGEFixo()
 
   if (!dadosPrev?.previsoes_por_municipio || !dadosIBGE) return []
 

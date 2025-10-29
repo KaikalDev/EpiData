@@ -80,3 +80,15 @@ export const GetAnaliseMunicipio = async () => {
     return null
   }
 }
+
+export const GetIBGEFixo = async () => {
+  try {
+    const response = await fetch('Data/IBGE.json')
+    if (!response.ok) throw new Error('Erro ao carregar JSON')
+    const data = await response.json()
+    return data
+  } catch (error) {
+    console.error('Erro ao pegar os dados locais:', error)
+    return null
+  }
+}

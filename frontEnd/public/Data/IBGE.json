@@ -1,0 +1,410 @@
+{
+  "Alagoa Grande": {
+    "População": 26062,
+    "IDHM": 0.582,
+    "PIB": 10573.42,
+    "Total": 156
+  },
+  "Alagoa Nova": {
+    "População": 21013,
+    "IDHM": 0.576,
+    "PIB": 15961.14,
+    "Total": 3
+  },
+  "Alagoinha": {
+    "População": 13725,
+    "IDHM": 0.595,
+    "PIB": 9468.2,
+    "Total": 3
+  },
+  "Alcantil": {
+    "População": 5578,
+    "IDHM": 0.578,
+    "PIB": 9968.7,
+    "Total": 1
+  },
+  "Arara": {
+    "População": 12212,
+    "IDHM": 0.548,
+    "PIB": 8250.02,
+    "Total": 1
+  },
+  "Areia": {
+    "População": 22633,
+    "IDHM": 0.594,
+    "PIB": 11435.64,
+    "Total": 22
+  },
+  "Aroeiras": {
+    "População": 18705,
+    "IDHM": 0.548,
+    "PIB": 8803.78,
+    "Total": 22
+  },
+  "Bananeiras": {
+    "População": 23134,
+    "IDHM": 0.568,
+    "PIB": 13143.47,
+    "Total": 2
+  },
+  "Barra de Santa Rosa": {
+    "População": 12904,
+    "IDHM": 0.562,
+    "PIB": 9665.19,
+    "Total": 2
+  },
+  "Bayeux": {
+    "População": 82742,
+    "IDHM": 0.649,
+    "PIB": 14016.16,
+    "Total": 5
+  },
+  "Bonito de Santa Fé": {
+    "População": 10252,
+    "IDHM": 0.574,
+    "PIB": 7962.14,
+    "Total": 2
+  },
+  "Boqueirão": {
+    "População": 17598,
+    "IDHM": 0.607,
+    "PIB": 14310.05,
+    "Total": 2
+  },
+  "Brejo do Cruz": {
+    "População": 13613,
+    "IDHM": 0.597,
+    "PIB": 10299.88,
+    "Total": 1
+  },
+  "Cabaceiras": {
+    "População": 5335,
+    "IDHM": 0.611,
+    "PIB": 20400.58,
+    "Total": 1
+  },
+  "Cabedelo": {
+    "População": 66519,
+    "IDHM": 0.748,
+    "PIB": 45182.89,
+    "Total": 3
+  },
+  "Cacimba de Dentro": {
+    "População": 16064,
+    "IDHM": 0.564,
+    "PIB": 8971.73,
+    "Total": 1
+  },
+  "Cajazeiras": {
+    "População": 63239,
+    "IDHM": 0.679,
+    "PIB": 19683.9,
+    "Total": 4
+  },
+  "Camalaú": {
+    "População": 6085,
+    "IDHM": 0.567,
+    "PIB": 11845.53,
+    "Total": 1
+  },
+  "Campina Grande": {
+    "População": 419379,
+    "IDHM": 0.72,
+    "PIB": 25066.11,
+    "Total": 1677
+  },
+  "Caraúbas": {
+    "População": 3944,
+    "IDHM": 0.585,
+    "PIB": 10032.69,
+    "Total": 1
+  },
+  "Catolé do Rocha": {
+    "População": 30661,
+    "IDHM": 0.64,
+    "PIB": 16405.68,
+    "Total": 1
+  },
+  "Caturité": {
+    "População": 5254,
+    "IDHM": 0.623,
+    "PIB": 12589.86,
+    "Total": 3
+  },
+  "Conde": {
+    "População": 27605,
+    "IDHM": 0.618,
+    "PIB": 50786.89,
+    "Total": 2
+  },
+  "Cuité": {
+    "População": 19719,
+    "IDHM": 0.591,
+    "PIB": 10842.53,
+    "Total": 1
+  },
+  "Curral de Cima": {
+    "População": 5254,
+    "IDHM": 0.529,
+    "PIB": 10659.61,
+    "Total": 3
+  },
+  "Dona Inês": {
+    "População": 10380,
+    "IDHM": 0.545,
+    "PIB": 9043.88,
+    "Total": 1
+  },
+  "Esperança": {
+    "População": 31231,
+    "IDHM": 0.623,
+    "PIB": 15193.67,
+    "Total": 1
+  },
+  "Fagundes": {
+    "População": 11049,
+    "IDHM": 0.56,
+    "PIB": 9419.68,
+    "Total": 2
+  },
+  "Guarabira": {
+    "População": 57484,
+    "IDHM": 0.673,
+    "PIB": 30143.08,
+    "Total": 3
+  },
+  "Gurjão": {
+    "População": 3242,
+    "IDHM": 0.625,
+    "PIB": 11022.19,
+    "Total": 2
+  },
+  "Itabaiana": {
+    "População": 23182,
+    "IDHM": 0.613,
+    "PIB": 13783.7,
+    "Total": 1
+  },
+  "João Pessoa": {
+    "População": 833932,
+    "IDHM": 0.763,
+    "PIB": 26936.78,
+    "Total": 121
+  },
+  "Juazeirinho": {
+    "População": 17007,
+    "IDHM": 0.567,
+    "PIB": 11417.26,
+    "Total": 2
+  },
+  "Lagoa Seca": {
+    "População": 27730,
+    "IDHM": 0.627,
+    "PIB": 11171.49,
+    "Total": 5
+  },
+  "Massaranduba": {
+    "População": 14139,
+    "IDHM": 0.567,
+    "PIB": 9262,
+    "Total": 3
+  },
+  "Matinhas": {
+    "População": 4571,
+    "IDHM": 0.541,
+    "PIB": 11933.63,
+    "Total": 1
+  },
+  "Monteiro": {
+    "População": 32277,
+    "IDHM": 0.628,
+    "PIB": 18888.75,
+    "Total": 2
+  },
+  "Mulungu": {
+    "População": 8791,
+    "IDHM": 0.565,
+    "PIB": 9852.41,
+    "Total": 1
+  },
+  "Natuba": {
+    "População": 8945,
+    "IDHM": 0.541,
+    "PIB": 9136.26,
+    "Total": 29
+  },
+  "Nova Floresta": {
+    "População": 9724,
+    "IDHM": 0.601,
+    "PIB": 9384.37,
+    "Total": 9
+  },
+  "Olivedos": {
+    "População": 3580,
+    "IDHM": 0.603,
+    "PIB": 10926.23,
+    "Total": 2
+  },
+  "Parari": {
+    "População": 1720,
+    "IDHM": 0.584,
+    "PIB": 12304.05,
+    "Total": 1
+  },
+  "Patos": {
+    "População": 103165,
+    "IDHM": 0.701,
+    "PIB": 18329.13,
+    "Total": 3
+  },
+  "Picuí": {
+    "População": 18333,
+    "IDHM": 0.608,
+    "PIB": 11378.13,
+    "Total": 1
+  },
+  "Pirpirituba": {
+    "População": 9340,
+    "IDHM": 0.595,
+    "PIB": 8980.48,
+    "Total": 1
+  },
+  "Pitimbu": {
+    "População": 16751,
+    "IDHM": 0.57,
+    "PIB": 22092.43,
+    "Total": 3
+  },
+  "Pocinhos": {
+    "População": 17469,
+    "IDHM": 0.591,
+    "PIB": 15101.87,
+    "Total": 2
+  },
+  "Puxinanã": {
+    "População": 14277,
+    "IDHM": 0.617,
+    "PIB": 9987.45,
+    "Total": 14
+  },
+  "Queimadas": {
+    "População": 47658,
+    "IDHM": 0.608,
+    "PIB": 13646.91,
+    "Total": 8
+  },
+  "Remígio": {
+    "População": 17885,
+    "IDHM": 0.607,
+    "PIB": 9080.26,
+    "Total": 2
+  },
+  "Riachão do Bacamarte": {
+    "População": 4690,
+    "IDHM": 0.553,
+    "PIB": 10982.25,
+    "Total": 1
+  },
+  "Santa Luzia": {
+    "População": 14959,
+    "IDHM": 0.682,
+    "PIB": 24065.43,
+    "Total": 1
+  },
+  "Santa Rita": {
+    "População": 149910,
+    "IDHM": 0.627,
+    "PIB": 18949.73,
+    "Total": 8
+  },
+  "São José de Piranhas": {
+    "População": 19067,
+    "IDHM": 0.591,
+    "PIB": 11289.98,
+    "Total": 2
+  },
+  "São Mamede": {
+    "População": 7470,
+    "IDHM": 0.641,
+    "PIB": 10705.26,
+    "Total": 1
+  },
+  "São Sebastião do Umbuzeiro": {
+    "População": 3279,
+    "IDHM": 0.581,
+    "PIB": 11433.3,
+    "Total": 2
+  },
+  "Sapé": {
+    "População": 51306,
+    "IDHM": 0.569,
+    "PIB": 12756.07,
+    "Total": 4
+  },
+  "São Vicente do Seridó": {
+    "População": 10291,
+    "IDHM": 0.555,
+    "PIB": 8232.3,
+    "Total": 1
+  },
+  "Serra Branca": {
+    "População": 13614,
+    "IDHM": 0.628,
+    "PIB": 10694.7,
+    "Total": 1
+  },
+  "Serra Redonda": {
+    "População": 6828,
+    "IDHM": 0.57,
+    "PIB": 10172.58,
+    "Total": 1
+  },
+  "Sertãozinho": {
+    "População": 5054,
+    "IDHM": 0.621,
+    "PIB": 10612.64,
+    "Total": 1
+  },
+  "Soledade": {
+    "População": 13968,
+    "IDHM": 0.616,
+    "PIB": 13377.14,
+    "Total": 2
+  },
+  "Sousa": {
+    "População": 67259,
+    "IDHM": 0.668,
+    "PIB": 18836.93,
+    "Total": 2
+  },
+  "Sumé": {
+    "População": 17166,
+    "IDHM": 0.627,
+    "PIB": 11749.92,
+    "Total": 1
+  },
+  "Taperoá": {
+    "População": 14068,
+    "IDHM": 0.578,
+    "PIB": 8977.25,
+    "Total": 1
+  },
+  "Teixeira": {
+    "População": 14631,
+    "IDHM": 0.605,
+    "PIB": 11027.51,
+    "Total": 1
+  },
+  "Tenório": {
+    "População": 2966,
+    "IDHM": 0.581,
+    "PIB": 11111.22,
+    "Total": 1
+  },
+  "Umbuzeiro": {
+    "População": 9124,
+    "IDHM": 0.584,
+    "PIB": 9193.27,
+    "Total": 4
+  }
+}
