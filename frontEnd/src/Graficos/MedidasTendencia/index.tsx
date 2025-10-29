@@ -4,7 +4,7 @@ import {
   GetDadosMeses,
   GetDadosPorMunicipio,
   GetTotalAno
-} from '../../Data'
+} from '../../services'
 import { FormatNumber, mean, median, std } from './../../Utils/utils'
 import { MedidasTendenciaContainer } from './styles'
 

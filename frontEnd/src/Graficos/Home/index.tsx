@@ -3,12 +3,13 @@ import {
   GetAnaliseMesDados,
   GetAnalisePorMunicipioObj,
   GetAnaliseSurtos
-} from '../../Data'
+} from '../../services'
 import MapPB from '../MapPb'
-import geoJsonData from '../../Data/geojs-25-mun.json'
+import geoJsonData from '../../services/geojs-25-mun.json'
 import Chart from 'react-google-charts'
-import { MunicipioRisco } from '../../Data/api'
+import { MunicipioRisco } from '../../services/api'
 import { SurtosContainer } from '../../styles'
+import RiscoMunicipio from '../RiscoMunicipio'
 
 const Home = () => {
   const [dadosMunicipio, setDadosMunicipio] = useState<
@@ -40,6 +41,7 @@ const Home = () => {
     return (
       <>
         <div>
+          <h2>Previsão 2026</h2>
           <MapPB dataPorMunicipio={dadosMunicipio} geoJsonData={geoJsonData} />
         </div>
         <div>
@@ -113,6 +115,7 @@ const Home = () => {
             </ul>
           </SurtosContainer>
         )}
+        <RiscoMunicipio />
       </>
     )
   } else {

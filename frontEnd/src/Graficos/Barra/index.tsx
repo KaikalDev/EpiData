@@ -5,7 +5,7 @@ import {
   GetDadosFaixaEtaria,
   GetDadosMeses,
   GetDadosPorMunicipio
-} from '../../Data'
+} from '../../services'
 
 const Barra = () => {
   const [ano, setAno] = useState('2024')

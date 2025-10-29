@@ -5,7 +5,7 @@ import {
   GetDadosFaixaEtaria,
   GetDadosMeses,
   GetDadosPorMunicipio
-} from '../../Data'
+} from '../../services'
 
 const Histogramas = () => {
   const [ano, setAno] = useState('2024')

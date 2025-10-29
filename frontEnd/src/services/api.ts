@@ -59,28 +59,24 @@ export const GetDadosIBGE = async (ano: Ano) => {
 
 export const GetAnaliseMes = async () => {
   try {
-    const response = await fetch(`${baseUrl}/analisar/casos/total_mensal`)
-    if (!response.ok) throw new Error('Erro ao buscar dados')
-
+    const response = await fetch('Data/total_mes.json')
+    if (!response.ok) throw new Error('Erro ao carregar JSON')
     const data = await response.json()
     return data
   } catch (error) {
-    console.error('Erro no pegar os dados:', error)
+    console.error('Erro ao pegar os dados locais:', error)
     return null
   }
 }
 
 export const GetAnaliseMunicipio = async () => {
   try {
-    const response = await fetch(
-      `${baseUrl}/analisar/casos/total_por_municipio`
-    )
-    if (!response.ok) throw new Error('Erro ao buscar dados')
-
+    const response = await fetch('Data/total_municipio.json')
+    if (!response.ok) throw new Error('Erro ao carregar JSON')
     const data = await response.json()
     return data
   } catch (error) {
-    console.error('Erro no pegar os dados:', error)
+    console.error('Erro ao pegar os dados locais:', error)
     return null
   }
 }

@@ -4,7 +4,7 @@ import {
   GetDispercaoIDHMCaso,
   GetDispercaoPIBCaso,
   GetDispercaoPopulacaoCaso
-} from '../../Data'
+} from '../../services'
 
 const Dispersao = () => {
   const [ano, setAno] = useState('2024')

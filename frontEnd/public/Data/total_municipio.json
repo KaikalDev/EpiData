@@ -1,0 +1,2921 @@
+{
+  "total_geral": 2216,
+  "previsoes_por_municipio": [
+    {
+      "municipio": "João Pessoa",
+      "total": 397,
+      "previsoes_mensais": {
+        "Jan": 6,
+        "Feb": 14,
+        "Mar": 22,
+        "Apr": 37,
+        "May": 47,
+        "Jun": 76,
+        "Jul": 51,
+        "Aug": 42,
+        "Sep": 34,
+        "Oct": 30,
+        "Nov": 24,
+        "Dec": 14
+      }
+    },
+    {
+      "municipio": "Areia",
+      "total": 286,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 7,
+        "Mar": 61,
+        "Apr": 64,
+        "May": 55,
+        "Jun": 36,
+        "Jul": 22,
+        "Aug": 18,
+        "Sep": 9,
+        "Oct": 8,
+        "Nov": 3,
+        "Dec": 2
+      }
+    },
+    {
+      "municipio": "Queimadas",
+      "total": 279,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 2,
+        "Apr": 8,
+        "May": 19,
+        "Jun": 55,
+        "Jul": 74,
+        "Aug": 42,
+        "Sep": 33,
+        "Oct": 23,
+        "Nov": 16,
+        "Dec": 6
+      }
+    },
+    {
+      "municipio": "Campina Grande",
+      "total": 249,
+      "previsoes_mensais": {
+        "Jan": 3,
+        "Feb": 2,
+        "Mar": 4,
+        "Apr": 7,
+        "May": 19,
+        "Jun": 48,
+        "Jul": 68,
+        "Aug": 32,
+        "Sep": 19,
+        "Oct": 20,
+        "Nov": 15,
+        "Dec": 12
+      }
+    },
+    {
+      "municipio": "Alagoa Grande",
+      "total": 201,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 7,
+        "Apr": 19,
+        "May": 65,
+        "Jun": 35,
+        "Jul": 32,
+        "Aug": 18,
+        "Sep": 12,
+        "Oct": 7,
+        "Nov": 3,
+        "Dec": 2
+      }
+    },
+    {
+      "municipio": "Pilar",
+      "total": 144,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 1,
+        "Mar": 2,
+        "Apr": 3,
+        "May": 23,
+        "Jun": 21,
+        "Jul": 26,
+        "Aug": 19,
+        "Sep": 19,
+        "Oct": 17,
+        "Nov": 5,
+        "Dec": 7
+      }
+    },
+    {
+      "municipio": "Cubati",
+      "total": 99,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 2,
+        "Mar": 5,
+        "Apr": 7,
+        "May": 14,
+        "Jun": 13,
+        "Jul": 14,
+        "Aug": 11,
+        "Sep": 9,
+        "Oct": 9,
+        "Nov": 8,
+        "Dec": 7
+      }
+    },
+    {
+      "municipio": "Natuba",
+      "total": 40,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 2,
+        "Mar": 4,
+        "Apr": 5,
+        "May": 7,
+        "Jun": 3,
+        "Jul": 3,
+        "Aug": 3,
+        "Sep": 2,
+        "Oct": 2,
+        "Nov": 4,
+        "Dec": 5
+      }
+    },
+    {
+      "municipio": "Algodão de Jandaíra",
+      "total": 30,
+      "previsoes_mensais": {
+        "Jan": 2,
+        "Feb": 3,
+        "Mar": 4,
+        "Apr": 4,
+        "May": 5,
+        "Jun": 4,
+        "Jul": 2,
+        "Aug": 1,
+        "Sep": 1,
+        "Oct": 2,
+        "Nov": 1,
+        "Dec": 1
+      }
+    },
+    {
+      "municipio": "Alagoa Nova",
+      "total": 28,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 4,
+        "Apr": 4,
+        "May": 6,
+        "Jun": 5,
+        "Jul": 4,
+        "Aug": 1,
+        "Sep": 1,
+        "Oct": 1,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Gurjão",
+      "total": 25,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 6,
+        "Apr": 7,
+        "May": 4,
+        "Jun": 3,
+        "Jul": 2,
+        "Aug": 1,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Catolé do Rocha",
+      "total": 24,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 3,
+        "Aug": 5,
+        "Sep": 4,
+        "Oct": 6,
+        "Nov": 2,
+        "Dec": 1
+      }
+    },
+    {
+      "municipio": "Araçagi",
+      "total": 22,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 5,
+        "May": 5,
+        "Jun": 5,
+        "Jul": 4,
+        "Aug": 2,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Várzea",
+      "total": 17,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 2,
+        "Jun": 2,
+        "Jul": 2,
+        "Aug": 2,
+        "Sep": 2,
+        "Oct": 2,
+        "Nov": 2,
+        "Dec": 2
+      }
+    },
+    {
+      "municipio": "Santa Rita",
+      "total": 15,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 1,
+        "Apr": 4,
+        "May": 3,
+        "Jun": 2,
+        "Jul": 1,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 1
+      }
+    },
+    {
+      "municipio": "Nova Floresta",
+      "total": 15,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 2,
+        "Apr": 4,
+        "May": 3,
+        "Jun": 2,
+        "Jul": 1,
+        "Aug": 2,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Ingá",
+      "total": 14,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 2,
+        "Aug": 3,
+        "Sep": 2,
+        "Oct": 2,
+        "Nov": 2,
+        "Dec": 2
+      }
+    },
+    {
+      "municipio": "Mamanguape",
+      "total": 14,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 4,
+        "Jul": 2,
+        "Aug": 2,
+        "Sep": 2,
+        "Oct": 1,
+        "Nov": 1,
+        "Dec": 1
+      }
+    },
+    {
+      "municipio": "Umbuzeiro",
+      "total": 12,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 5,
+        "Aug": 2,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Puxinanã",
+      "total": 11,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 2,
+        "Mar": 2,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 1,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cuité",
+      "total": 10,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 3,
+        "Aug": 3,
+        "Sep": 2,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Baraúna",
+      "total": 9,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 3,
+        "Jun": 2,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Conde",
+      "total": 9,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 3,
+        "Jun": 3,
+        "Jul": 2,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Vista Serrana",
+      "total": 9,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 2,
+        "Jul": 2,
+        "Aug": 2,
+        "Sep": 1,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Aroeiras",
+      "total": 8,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 2,
+        "Jun": 2,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Casserengue",
+      "total": 7,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 2,
+        "Jul": 2,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Borborema",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 2,
+        "Jul": 2,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Caturité",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 2,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cruz do Espírito Santo",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 2,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 2,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Patos",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 3,
+        "Jul": 2,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Picuí",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 2,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 1,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Soledade",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 2,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 2,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Sousa",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 3,
+        "Jun": 2,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Coremas",
+      "total": 6,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 2,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Bayeux",
+      "total": 5,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 1,
+        "Oct": 1,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Guarabira",
+      "total": 5,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 1
+      }
+    },
+    {
+      "municipio": "Pombal",
+      "total": 5,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 2,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Livramento",
+      "total": 5,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 2,
+        "Jul": 1,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Prata",
+      "total": 5,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Jacaraú",
+      "total": 5,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Juru",
+      "total": 5,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Água Branca",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 1,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Araruna",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cabedelo",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Fagundes",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Olivedos",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Arara",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Curral de Cima",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Lagoa de Dentro",
+      "total": 4,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 1,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Boqueirão",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Esperança",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 2,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Pedro Régis",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 2,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Santa Cecília",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 2,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Uiraúna",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 1,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Brejo dos Santos",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Itapororoca",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Barra de Santa Rosa",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Nova Olinda",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Sertãozinho",
+      "total": 3,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 1,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 1
+      }
+    },
+    {
+      "municipio": "Areial",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Bananeiras",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Bom Jesus",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cachoeira dos Índios",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cajazeiras",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 1,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Juazeirinho",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 1
+      }
+    },
+    {
+      "municipio": "Monteiro",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Aguiar",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 2,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Nova Palmeira",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São João do Cariri",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Solânea",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Boa Ventura",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Frei Martinho",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Santo André",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Caraúbas",
+      "total": 2,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Boa Vista",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cabaceiras",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Conceição",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Condado",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Massaranduba",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Montadas",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Pedra Lavrada",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Pocinhos",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Poço Dantas",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Rio Tinto",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Santana de Mangueira",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São Bento",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São João do Tigre",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São Mamede",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Sapé",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São Vicente do Seridó",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Sobrado",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Taperoá",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Zabelê",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Alagoinha",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cacimba de Dentro",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Capim",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Coxixola",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Desterro",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Dona Inês",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Ibiara",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Itabaiana",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Itaporanga",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Juarez Távora",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Lagoa Seca",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Malta",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Marcação",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Mataraca",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Mogeiro",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Pedras de Fogo",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Quixaba",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São José dos Ramos",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Sossêgo",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Sumé",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Amparo",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Belém do Brejo do Cruz",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Bonito de Santa Fé",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Caiçara",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cuitegi",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Damião",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Duas Estradas",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Gado Bravo",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Itatuba",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Juripiranga",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 1,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Lucena",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 1,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Monte Horebe",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Piancó",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Pilõezinhos",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São José de Piranhas",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São José do Bonfim",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São José do Brejo do Cruz",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São Sebastião do Umbuzeiro",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 1,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Teixeira",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 1,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Tenório",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São José da Lagoa Tapada",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Serraria",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 1,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Vieirópolis",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 1,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Alcantil",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Matinhas",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 1,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Mulungu",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 1,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Parari",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 1,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Serra Redonda",
+      "total": 1,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 1,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Alhandra",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Baía da Traição",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Brejo do Cruz",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Caldas Brandão",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Gurinhém",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Mari",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Pitimbu",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Remígio",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Riachão do Bacamarte",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Santa Luzia",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Assunção",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Barra de São Miguel",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Caaporã",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Camalaú",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Cuité de Mamanguape",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Jericó",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Junco do Seridó",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Pirpirituba",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Serra Branca",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "São Miguel de Taipu",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    },
+    {
+      "municipio": "Serra da Raiz",
+      "total": 0,
+      "previsoes_mensais": {
+        "Jan": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Apr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Aug": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dec": 0
+      }
+    }
+  ]
+}

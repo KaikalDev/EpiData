@@ -221,25 +221,6 @@ export const GetAnalisePorMunicipioObj = async (): Promise<
   return municipios
 }
 
-function escalaDinâmica(população: number, baseScale = 10000, alpha = 0.3) {
-  if (!população || população <= 0) return baseScale
-  const logPop = Math.log10(população)
-  // subtrai 4 para que cidades ~10k sejam a referência (log10(10_000) = 4)
-  return baseScale * (1 + alpha * (logPop - 4))
-}
-
-function riscoAjustadoPorPop(
-  totalPrevisto: number,
-  população: number,
-  opts?: { baseScale?: number; alpha?: number }
-) {
-  const baseScale = opts?.baseScale ?? 10000
-  const alpha = opts?.alpha ?? 0.3
-  const incidenciaBruta = população > 0 ? totalPrevisto / população : 0
-  const escala = escalaDinâmica(população, baseScale, alpha)
-  return incidenciaBruta * escala // já é um número "casos por X ajustado"
-}
-
 export const GetAnaliseSurtos = async (): Promise<MunicipioRisco[]> => {
   const [dadosPrev, dadosIBGE] = await Promise.all([
     GetAnaliseMunicipio(),
@@ -272,4 +253,11 @@ export const GetAnaliseSurtos = async (): Promise<MunicipioRisco[]> => {
     .sort((a: MunicipioRisco, b: MunicipioRisco) => b.risco - a.risco)
 
   return municipios
+}
+
+export const GetAllMunicipios = async (): Promise<any[]> => {
+  const data = await GetAnaliseMunicipio()
+  const municipios = data.previsoes_por_municipio
+
+  return [...municipios]
 }

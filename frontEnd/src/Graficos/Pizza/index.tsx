@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react'
 import Chart from 'react-google-charts'
-import { GetDadosFaixaEtaria, GetDadosGenero, GetDadosMeses } from '../../Data'
+import {
+  GetDadosFaixaEtaria,
+  GetDadosGenero,
+  GetDadosMeses
+} from '../../services'
 
 const Pizza = () => {
   const [ano, setAno] = useState('2024')
